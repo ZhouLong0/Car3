@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+
+
+<link rel="stylesheet" th:href=@{css/style.css}>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+	<!-- Page Navbar -->
+	<nav id="scrollspy"
+		class="navbar page-navbar navbar-light navbar-expand-md fixed-top"
+		data-spy="affix" data-offset-top="20">
+		<div class="container">
+			<a class="navbar-brand" href="/"><strong class="text-primary">CAR</strong>
+				<span class="text-dark">3</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="/">Home</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" th:href="@{/models}">Models</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" th:href="@{/userFiliali}">Branches</a>
+					</li>
+					<li class="nav-item ml-md-4"><a
+						class="nav-link btn btn-primary" th:href="@{/login}">Login</a>
+					</li>
+					<li class="nav-item ml-md-4"><a
+						class="nav-link btn btn-primary" th:href="@{/register}">Register</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End of Page Navbar -->
+
+	<!-- Page Header -->
+	<header id="home" class="header1">
+		<div class="overlay"></div>
+		<div class="header-content">
+			<h6>CAR3</h6>
+			<br></br>
+			<br></br>
+			<br></br>
+			<h3></h3>
+		</div>
+	</header>
+	<!-- End of Page Header -->
+
+	
+	<!-- section -->
+	<section>
+		<!-- Container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row justify-content-between align-items-center">
+				<div class="col-md-6">
+					<div class="img-wrapper">
+						<div class="after"></div>
+						<img th:src= @{images/car0.jpg} class="w-100" alt="About Us">
+					</div>
+				</div>
+				<div class="col-md-5">
+					<h6 class="title mb-3">Models</h6>
+
+					<p>Our models are the best on the market. We are looking for models all over the world to satisfy your every need.</p>
+					<p class="text-muted"></p>
+					<a class="btn btn-outline-primary btn-sm" th:href="@{/models}">Take a look to our models</a>
+				</div>
+			</div>
+			<!-- End of Row -->
+		</div>
+		<!-- End of Container -->
+	</section>
+	<!-- End of Section -->
+
+	<!-- section -->
+	<section>
+		<!-- Container -->
+		<div class="container">
+			<!-- Row -->
+			<div class="row justify-content-between align-items-center">
+				<div class="col-md-5">
+					<h6 class="title mb-3">Branches</h6>
+					<p>Our branches are scattered around the world and allow you to shop super convenient. Take a moment to get to know these amazing branches.</p>
+					<a class="btn btn-outline-primary btn-sm" th:href="@{userFiliali}">Take a look to our branches</a>
+
+				</div>
+				<div class="col-md-6">
+					<div class="img-wrapper">
+						<div class="after right"></div>
+						<img th:src=@{images/branch0.jpg} class="w-100" alt="About Us">
+					</div>
+				</div>
+			</div>
+			<!-- End of Row -->
+		</div>
+		<!-- End of Container-->
+	</section>
+	<!-- End of Section -->
+
+
+
+	<!-- Section -->
+	<section class="pb-0">
+		<!-- Container -->
+		<div class="container">
+			<!-- Pre footer -->
+			<div class="pre-footer">
+				<ul class="list">
+					<li class="list-head">
+						<h6 class="font-weight-bold">ABOUT US</h6>
+					</li>
+					<li class="list-body">
+						<p>We are a car dealership managed by students of RomaTre University</p> <a href="#"><strong
+							class="text-primary">CAR</strong> <span class="text-dark">3</span></a>
+					</li>
+				</ul>
+				
+				<ul class="list">
+					<li class="list-head">
+						<h6 class="font-weight-bold">CONTACT INFO</h6>
+					</li>
+					<li class="list-body">
+						<p>Contact us and we'll get back to you within 24 hours.</p>
+						<p>
+							<i class="ti-location-pin"></i> Via RomaTre
+						</p>
+						<p>
+							<i class="ti-email"></i> Car3@uniroma3.com
+						</p>
+					</li>
+				</ul>
+			</div>
+			<!-- End of Pre footer -->
+
+			<!-- foooter -->
+			<footer class="footer">
+				<p>
+					Copyright 2022
+				</p>
+			</footer>
+			<!-- End of Footer-->
+
+		</div>
+		<!--End of Container -->
+	</section>
+	<!-- End of Section -->
+
+
+</body>
+</html>
+
